@@ -1,0 +1,5 @@
+export { default as Quotes } from './Quotes.svelte'
+export { default as About } from './About.svelte'
+export { default as Repertoire } from './Repertoire.svelte'
+export { default as Media } from './Media.svelte'
+export { default as Contact } from './Contact.svelte'
