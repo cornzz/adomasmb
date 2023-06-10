@@ -2,6 +2,10 @@
 	import '../app.css'
 </script>
 
-<div class="max-w-3xl mx-auto">
-	<slot />
-</div>
+<slot />
+
+<style global lang="postcss">
+	:root {
+		font-family: 'Montserrat', sans-serif;
+	}
+</style>
