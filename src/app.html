@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	%sveltekit.head%
 </head>
@@ -12,4 +12,13 @@
 	<div style="display: contents">%sveltekit.body%</div>
 </body>
 
+<script>
+	// Light favicon for dark mode
+	if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+		darkicon = document.createElement('link')
+		darkicon.rel = 'icon'
+		darkicon.href = '/favicon-light.svg'
+		document.head.appendChild(darkicon)
+	}
+</script>
 </html>

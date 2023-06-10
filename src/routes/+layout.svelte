@@ -1,8 +1,10 @@
 <script>
-	import '../app.css'
+	import '../app.pcss'
 </script>
 
-<slot />
+<div class="">
+	<slot />
+</div>
 
 <style global lang="postcss">
 	:root {
