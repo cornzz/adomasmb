@@ -47,8 +47,8 @@
 	<div class="flex overflow-hidden">
 		{#each quotes as item}
 			<blockquote
-				class="px-10 py-4 grow-0 shrink-0 basis-full transition-transform duration-{carouselSpeed}"
-				style="transform: translateX({transform}%)"
+				class="px-10 py-4 grow-0 shrink-0 basis-full transition-transform"
+				style="transform: translateX({transform}%); transition-duration: {carouselSpeed}ms"
 			>
 				<p class="text-2xl font-bold">{item.quote}</p>
 				<cite class="block before:content-['–'] before:mr-2">{item.author}</cite>
