@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { Quotes, About, Repertoire, Media, Contact } from '$lib'
 
-	let scrollY: number
-	let innerHeight: number
+	let scrollY: number = 0
+	let innerHeight: number = 0
 </script>
 
 <svelte:window bind:scrollY bind:innerHeight />
@@ -11,18 +11,15 @@
 </svelte:head>
 
 <div class="min-h-screen">
-	<header class="relative flex items-center justify-between py-8 px-[5vw] text-white">
+	<header class="relative flex items-center justify-between py-10 px-[5vw] text-white bg-primary/50">
 		<div class="flex items-center">
-			<img class="p-3 h-20 w-auto border-4 border-white bg-primary/50" src="/images/logo.svg" alt="Logo" width="465" height="148" />
-			<span class="text-3xl ml-4 font-semibold bg-primary/50 px-4 py-2">Adomas Morkūnas-Budrys</span>
-		</div>
-		<div class="text-xl bg-primary/50 px-4 py-2">
-			Menu
+			<img class="p-3 h-16 w-auto border-4 border-white bg-primary/50" src="/images/logo.svg" alt="Logo" width="465" height="148" />
+			<span class="text-3xl ml-8 font-semibold">Adomas Morkūnas-Budrys</span>
 		</div>
 	</header>
 	
 	<div class="background-image"></div>
-	<div class="background-image blurred" style="--opacity: {(scrollY - innerHeight * 0.10) / innerHeight * 4}"></div>
+	<div class="background-image blurred" style="opacity: {(scrollY - innerHeight * 0.10) / innerHeight * 4}"></div>
 	
 	<Quotes />
 </div>
@@ -54,7 +51,6 @@
 
 		&.blurred {
 			@apply blur-xl opacity-0;
-			opacity: var(--opacity);
 		}
 	}
 </style>
