@@ -9,6 +9,9 @@ export default {
 			},
 			backgroundImage: {
 				'landing-image': 'url("/images/adomas-mb-2.webp")'
+			},
+			boxShadow: {
+				'input': '0 0 0px 2px theme("colors.primary")'
 			}
 		}
 	},

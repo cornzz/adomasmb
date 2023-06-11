@@ -38,6 +38,7 @@
 <div class="relative w-10/12 max-w-6xl mx-auto mt-[60vh] text-white bg-primary/50">
 	<button
 		class="absolute z-10 left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 transition-all hover:-left-2"
+		aria-label="Previous Quote"
 		on:click={() => changeQuote(-1)}
 	>
 		<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
@@ -57,6 +58,7 @@
 	</div>
 	<button
 		class="absolute z-10 right-0 top-1/2 -translate-y-1/2 translate-x-1/2 transition-all hover:-right-2"
+		aria-label="Next Quote"
 		on:click={() => changeQuote(1)}
 	>
 		<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
