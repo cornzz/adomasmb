@@ -2,9 +2,10 @@
 	import { dev } from '$app/environment'
 	import { onMount } from 'svelte'
 
+    let ready: boolean = false
 	let loading: boolean = false
-    let submissionSuccess: boolean = false
-    let submissionFailure: boolean = false
+    let contactSuccess: boolean = false
+    let contactFailure: boolean = false
     let form: HTMLFormElement
 	let spamcheck1Input: HTMLInputElement
 	let spamcheck2Input: HTMLInputElement
@@ -18,25 +19,31 @@
         })
         if (response.ok) {
             form.reset()
-            submissionSuccess = true
+            contactSuccess = true
+            localStorage.setItem('contactedAt', `${+new Date()}`)
         } else {
-            submissionFailure = true
+            contactFailure = true
         }
         loading = false
 	}
 
 	onMount(() => {
-		setTimeout(() => (spamcheck1Input.value = 'amb_spam_check_1_passed'), dev ? 0 : 10000)
+        const contactedAt = localStorage.getItem('contactedAt')
+        if (contactedAt) {
+            contactSuccess = new Date(+contactedAt + 86400000) >= new Date() 
+        }
+		setTimeout(() => (spamcheck1Input && (spamcheck1Input.value = 'amb_spam_check_1_passed')), 10000)
+        ready = true
 	})
 </script>
 
 <h1 class="text-4xl font-semibold text-white">Contact</h1>
 
-{#if submissionSuccess}
+{#if contactSuccess}
     <div class="text-white">
         Thank you for contacting me, I will get back to you as soon as possible!
     </div>
-{:else}
+{:else if ready}
     <form class="flex flex-col gap-2" class:loading on:submit|preventDefault={submit} bind:this={form}>
         <input name="name" type="text" placeholder="Your Name" required={!dev} />
         <input name="email" type="email" placeholder="Your E-Mail Address" required={!dev} />
@@ -45,14 +52,14 @@
             cols="30"
             rows="8"
             placeholder="Your Message"
-            minlength="{!dev ? 10 : 0}"
+            minlength="10"
             required={!dev}
             on:focus={() => (spamcheck2Input.value = 'amb_spam_check_2_passed')}
         />
         <input name="spamcheck1" type="hidden" bind:this={spamcheck1Input} />
         <input name="spamcheck2" type="hidden" bind:this={spamcheck2Input} />
         <div class="flex justify-end items-center gap-3">
-            {#if submissionFailure}
+            {#if contactFailure}
                 <div class="text-red-400">Something went wrong... Please try again later!</div>
             {/if}
             <button
