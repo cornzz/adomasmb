@@ -1,8 +1,12 @@
 <script lang="ts">
-	import { Quotes, About, Repertoire, Media, Contact } from '$lib'
+	import { Quotes, About, Contact } from '$lib'
+	import { onMount } from 'svelte'
 
 	let scrollY: number = 0
 	let innerHeight: number = 0
+	let year: number
+
+	onMount(() => (year = new Date().getFullYear()))
 </script>
 
 <svelte:window bind:scrollY bind:innerHeight />
@@ -29,29 +33,25 @@
 
 	<div class="absolute left-0 top-0 w-screen h-screen -z-10">
 		<div class="absolute h-full w-full bg-landing-image bg-cover bg-center bg-no-repeat" />
-		<!-- <div
-			class="absolute h-full w-full backdrop-blur-xl opacity-0"
-			style="opacity: {((scrollY - innerHeight * 0.1) / innerHeight) * 4}"
-		/> -->
 	</div>
 
 	<Quotes />
 </div>
 
-<div class="bg-[#264d58]">
+<div class="bg-secondary">
 	<div class="w-11/12 max-w-5xl px-16 py-10 mx-auto bg-primary relative top-[-50px]">
 		<About />
 	</div>
 </div>
 
-<div class="bg-[#264d58]">
-	<div class="w-11/12 max-w-5xl px-16 py-10 mx-auto">
+<div class="bg-secondary">
+	<div class="w-11/12 max-w-5xl py-10 mx-auto">
 		<Contact />
 	</div>
 </div>
 
-<!-- <div class="bg-white">
-	<div class="w-11/12 max-w-5xl py-10 mx-auto relative top-[-50px]">
-		<Repertoire />
-	</div>
-</div> -->
+<footer class="py-2 bg-secondary text-white flex flex-col items-center justify-center sm:flex-row gap-x-2">
+	<span>© {year ?? '20XX'} Adomas Morkūnas-Budrys</span>
+	<span class="hidden sm:block">|</span>
+	<span>Design by <a href="https://corny.me" target="_blank">corny</a></span>
+</footer>
