@@ -37,7 +37,7 @@
 
 <div class="relative w-10/12 max-w-6xl mx-auto mt-[55vh] mb-[calc(5vw+80px)] text-white bg-primary/50 z-10">
 	<button
-		class="absolute z-10 left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 transition-all hover:-left-2"
+		class="absolute z-10 left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 transition-all sm:hover:-left-2"
 		aria-label="Previous Quote"
 		on:click={() => changeQuote(-1)}
 	>
@@ -57,7 +57,7 @@
 		{/each}
 	</div>
 	<button
-		class="absolute z-10 right-0 top-1/2 -translate-y-1/2 translate-x-1/2 transition-all hover:-right-2"
+		class="absolute z-10 right-0 top-1/2 -translate-y-1/2 translate-x-1/2 transition-all sm:hover:-right-2"
 		aria-label="Next Quote"
 		on:click={() => changeQuote(1)}
 	>
