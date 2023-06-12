@@ -36,8 +36,11 @@
 </script>
 
 <div class="relative w-10/12 max-w-6xl mx-auto mt-[55vh] mb-[calc(5vw+80px)] text-white bg-primary/50 z-10">
+	<svg class="absolute h-8 -top-8 left-8 px-2 pt-2 bg-primary/50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.915 341.269">
+		<path fill="currentColor" d="M91.401 80.621a194.247 194.247 0 0117.094-79.403C43.936 44.53 2.969 106.278 1.28 175.056L0 176.462v164.807h212.677V127.964H97.371a190.082 190.082 0 01-5.97-47.343zM395.699 127.964a190.921 190.921 0 01-6.281-48.561A194.983 194.983 0 01406.543 0c-65.401 43.874-106.588 106.652-107.274 176.462h-.031v164.807h212.677V127.964z"></path>
+	</svg>
 	<button
-		class="absolute z-10 left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 transition-all sm:hover:-left-2"
+		class="absolute z-10 hidden left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 transition-all sm:hover:-left-2"
 		aria-label="Previous Quote"
 		on:click={() => changeQuote(-1)}
 	>
@@ -57,7 +60,7 @@
 		{/each}
 	</div>
 	<button
-		class="absolute z-10 right-0 top-1/2 -translate-y-1/2 translate-x-1/2 transition-all sm:hover:-right-2"
+		class="absolute z-10 hidden right-0 top-1/2 -translate-y-1/2 translate-x-1/2 transition-all sm:hover:-right-2"
 		aria-label="Next Quote"
 		on:click={() => changeQuote(1)}
 	>
