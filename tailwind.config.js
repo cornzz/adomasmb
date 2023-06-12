@@ -4,17 +4,18 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'primary': '#5c7d80',
-				'secondary': '#264d58'
+				primary: '#5c7d80',
+				secondary: '#264d58',
+				dark: '#0d0f12'
 			},
 			backgroundImage: {
 				'landing-image': 'url("/images/adomas-mb-2.webp")'
 			},
 			boxShadow: {
-				'input': '0 0 0px 2px theme("colors.primary")'
+				input: '0 0 0px 2px theme("colors.primary")'
 			},
 			screens: {
-				'gradient': '1200px'
+				gradient: '1200px'
 			}
 		}
 	},

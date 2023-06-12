@@ -37,7 +37,7 @@
 	})
 </script>
 
-<h1 class="text-4xl font-semibold text-white">Contact</h1>
+<h1 id="contact" class="text-4xl font-semibold text-white">Contact</h1>
 
 {#if contactSuccess}
     <div class="text-white">
@@ -63,8 +63,7 @@
                 <div class="text-red-400">Something went wrong... Please try again later!</div>
             {/if}
             <button
-                class="flex items-center justify-center bg-primary h-10 text-white min-w-[150px]
-                       transition-all hover:bg-primary/80 disabled:bg-primary/60 disabled:text-white/50"
+                class="btn btn-primary flex items-center justify-center"
                 disabled={loading}
             >
                 {#if loading}

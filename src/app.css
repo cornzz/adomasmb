@@ -28,6 +28,19 @@
     p {
         @apply text-lg;
     }
+
+	.btn {
+		@apply h-10 text-white min-w-[150px] transition-all;
+
+		&.btn-primary {
+			@apply bg-primary hover:bg-primary/80;
+			@apply disabled:bg-primary/60 disabled:text-white/50;
+		}
+
+		&.btn-outline {
+			@apply border border-2 border-secondary hover:bg-primary/80;
+		}
+	}
 }
 
 @tailwind components;

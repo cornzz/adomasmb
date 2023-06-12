@@ -51,7 +51,7 @@
 	<Contact />
 </div>
 
-<footer class="py-2 bg-secondary text-white flex flex-col items-center justify-center sm:flex-row gap-x-2">
+<footer class="py-2 bg-dark text-white flex flex-col items-center justify-center sm:flex-row gap-x-2">
 	<span>© {year ?? '20XX'} Adomas Morkūnas-Budrys</span>
 	<span class="hidden sm:block">|</span>
 	<span>Design by <a href="https://corny.me" target="_blank">corny</a></span>
