@@ -15,18 +15,18 @@
 </svelte:head>
 
 <div class="min-h-screen">
-	<header class="relative flex items-center justify-between py-8 px-[5vw] text-white bg-primary/50">
+	<header class="relative flex items-center justify-between px-[3vw] py-6 md:px-[5vw] md:py-8 text-white bg-primary/50">
 		<div class="flex items-center">
 			<img
-				class="p-3 h-16 w-auto border-4 border-white bg-primary/50"
+				class="p-3 h-12 border-2 w-auto md:h-16 md:border-4 border-white bg-primary/50"
 				src="/images/logo.svg"
 				alt="Logo"
 				width="465"
 				height="148"
 			/>
-			<span class="text-3xl ml-8 font-semibold">Adomas Morkūnas-Budrys</span>
+			<span class="ml-3 md:text-3xl md:ml-8 font-semibold">Adomas Morkūnas-Budrys</span>
 		</div>
-		<a href="https://instagram.com/adomasmb" target="_blank">
+		<a class="ml-3" href="https://instagram.com/adomasmb" target="_blank">
 			<img src="/images/instagram.svg" alt="Instagram Logo" width="20" height="20" />
 		</a>
 	</header>
@@ -38,16 +38,16 @@
 	<Quotes />
 </div>
 
-<div class="bg-secondary">
-	<div class="w-11/12 max-w-5xl px-16 py-10 mx-auto bg-primary relative top-[-50px]">
-		<About />
-	</div>
+<div class="h-0 -z-10 hidden gradient:block">
+	<img class="-translate-y-full" src="/images/gradient.webp" alt="Gradient" loading="lazy" />
 </div>
 
-<div class="bg-secondary">
-	<div class="w-11/12 max-w-5xl py-10 mx-auto">
-		<Contact />
-	</div>
+<div class="w-11/12 max-w-5xl px-6 sm:px-16 py-10 mx-auto bg-primary relative top-[-50px] min-[552px]:max-md:top-0">
+	<About />
+</div>
+
+<div class="w-11/12 max-w-5xl py-10 mx-auto">
+	<Contact />
 </div>
 
 <footer class="py-2 bg-secondary text-white flex flex-col items-center justify-center sm:flex-row gap-x-2">

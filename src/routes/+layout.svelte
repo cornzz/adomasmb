@@ -2,12 +2,11 @@
 	import '../app.pcss'
 </script>
 
-<div class="">
-	<slot />
-</div>
+<slot />
 
 <style global lang="postcss">
 	:root {
 		font-family: 'Montserrat', sans-serif;
+		@apply bg-secondary;
 	}
 </style>

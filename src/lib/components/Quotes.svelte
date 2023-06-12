@@ -35,7 +35,7 @@
 	})
 </script>
 
-<div class="relative w-10/12 max-w-6xl mx-auto mt-[60vh] text-white bg-primary/50">
+<div class="relative w-10/12 max-w-6xl mx-auto mt-[55vh] mb-[calc(5vw+80px)] text-white bg-primary/50 z-10">
 	<button
 		class="absolute z-10 left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 transition-all hover:-left-2"
 		aria-label="Previous Quote"
