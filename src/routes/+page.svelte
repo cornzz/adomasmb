@@ -32,7 +32,7 @@
 		</a>
 	</header>
 
-	<div class="absolute left-0 top-0 w-screen h-screen -z-10">
+	<div class="absolute left-0 top-0 w-full h-screen -z-10">
 		<div class="absolute h-full w-full bg-landing-image bg-cover bg-center bg-no-repeat" />
 	</div>
 
