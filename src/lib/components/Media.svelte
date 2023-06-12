@@ -30,15 +30,14 @@
 		}
 	]
 
-    let innerWidth: number
+    let outerWidth: number
     let iframe: HTMLIFrameElement
 
-    $: if (innerWidth) {
-        const maxIframeWidth = innerWidth * 11/12
-        if (maxIframeWidth <= 560) {
-            iframe.width = `${maxIframeWidth}`
-            iframe.height = `${maxIframeWidth * 9/16}`
-        }
+    $: if (outerWidth) {
+        const maxIframeWidth = outerWidth * 11/12
+        const actualWidth = Math.min(maxIframeWidth, 560)
+        iframe.width = `${actualWidth}`
+        iframe.height = `${actualWidth * 9/16}`
     }
 
 	onMount(() => {
@@ -51,7 +50,7 @@
 	})
 </script>
 
-<svelte:window bind:innerWidth />
+<svelte:window bind:outerWidth />
 
 <div id="mediaContainer" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
 	{#each images as image}
@@ -67,7 +66,7 @@
         Helsinki Philharmonic Orchestra, soloist Joonas Ahonen
     </div>
 	<iframe
-        class="border border-primary"
+        class="outline outline-primary outline-2"
 		width="560"
 		height="315"
 		src="https://www.youtube-nocookie.com/embed/qWZEmtmpGdY"
