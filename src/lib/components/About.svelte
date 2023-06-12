@@ -5,22 +5,22 @@
 	let innerWidth: number
 	let mobile: boolean = false
 	let readMore: boolean = false
-    let slideDuration: number = 0
-    let ready: boolean = false
+	let slideDuration: number = 0
+	let ready: boolean = false
 	let section: HTMLElement
 
-    async function prepare(): Promise<void> {
-        mobile = innerWidth <= 600
-        await tick()
-        slideDuration = 1000
-    }
+	async function prepare(): Promise<void> {
+		mobile = innerWidth <= 600
+		await tick()
+		slideDuration = 1000
+	}
 
-    $: if (ready && innerWidth) prepare()
+	$: if (ready && innerWidth) prepare()
 
-    onMount(async () => {
-        prepare()
-        ready = true
-    })
+	onMount(async () => {
+		prepare()
+		ready = true
+	})
 </script>
 
 <svelte:window bind:innerWidth />
@@ -37,13 +37,14 @@
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
 			<br />
 			<p>
-				Adomas has worked with such orchestras as the Finnish Radio Symphony, Manchester Camerata, Helsinki
-				Philharmonic, Lithuanian National Symphony, Thessaloniki State Symphony, Lithuanian Chamber, Olten
-				Philharmonic of Izmir, Südwestdeutsche Philharmonie Konstanz, MÁV Symphony, Joensuu City, St.
-				Christopher Chamber, and others. He has worked in such opera houses as Bavarian State Opera and the Lyon
-				Opera House and collaborated with and assisted such conductors as Mirga Gražinytė-Tyla, Titus Engel, and
-				Modestas Pitrėnas. In masterclasses, he has worked with Paavo Järvi, Bernard Haitink, Jorma Panula,
-				Nicolas Pasquet, Larry Rachleff, Nicholas Collon, Pavel Baleff, Eva Ollikainen, and others.
+				On different occasions, Adomas has worked with such orchestras as the Finnish Radio Symphony, Manchester
+				Camerata, Helsinki Philharmonic, Lithuanian National Symphony, Thessaloniki State Symphony, Lithuanian
+				Chamber, Olten Philharmonic of Izmir, Südwestdeutsche Philharmonie Konstanz, MÁV Symphony, Joensuu City,
+				St. Christopher Chamber, and others. He has worked in such opera houses as Bavarian State Opera and the
+				Lyon Opera House and collaborated with and assisted such conductors as Mirga Gražinytė-Tyla, Titus
+				Engel, Miguel Pérez Iñesta, and Modestas Pitrėnas. In masterclasses, he has worked with Paavo Järvi,
+				Bernard Haitink, Jorma Panula, Nicolas Pasquet, Larry Rachleff, Nicholas Collon, Pavel Baleff, Eva
+				Ollikainen, and others.
 			</p>
 			<br />
 			<p>
