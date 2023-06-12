@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Quotes, About, Contact } from '$lib'
+	import { Quotes, About, Media, Contact } from '$lib'
 	import { onMount } from 'svelte'
 
 	let scrollY: number = 0
@@ -48,6 +48,10 @@
 </div>
 
 <div class="w-11/12 max-w-5xl py-10 mx-auto">
+	<Media />
+</div>
+
+<div class="w-11/12 max-w-5xl py-16 mx-auto">
 	<Contact />
 </div>
 
