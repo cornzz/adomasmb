@@ -16,6 +16,7 @@
 		"@sveltejs/kit": "^1.5.0",
 		"autoprefixer": "^10.4.14",
 		"photoswipe": "^5.3.7",
+		"photoswipe-dynamic-caption-plugin": "^1.2.7",
 		"postcss": "^8.4.24",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",

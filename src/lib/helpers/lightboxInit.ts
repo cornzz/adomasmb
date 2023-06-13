@@ -1,5 +1,5 @@
-//@ts-ignore
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
+import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin'
 
 export function initLightbox(getIframeDimensions: () => [string, string]) {
     const lightbox = new PhotoSwipeLightbox({
@@ -9,6 +9,8 @@ export function initLightbox(getIframeDimensions: () => [string, string]) {
         tapAction: 'close',
         pswpModule: () => import('photoswipe')
     })
+
+    new PhotoSwipeDynamicCaption(lightbox)
 
     lightbox.addFilter('itemData', (itemData: any) => {
         const youtubeUrl = itemData.element.dataset.youtubeUrl
@@ -58,7 +60,6 @@ export function initLightbox(getIframeDimensions: () => [string, string]) {
                 element.setAttribute('rel', 'noopener')
 
                 pswp.on('change', () => {
-                    console.log('chnge', pswp.currSlide.data.type)
                     if (pswp.currSlide.data.type !== 'youtube') {
                         element.href = pswp.currSlide.data.src
                         element.classList.remove('pswp__hidden')
