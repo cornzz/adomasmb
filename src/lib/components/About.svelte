@@ -4,7 +4,7 @@
 
 	let innerWidth: number
 	let mobile: boolean = false
-	let readMore: boolean = false
+	let showMore: boolean = false
 	let slideDuration: number = 0
 	let ready: boolean = false
 	let section: HTMLElement
@@ -33,7 +33,7 @@
 		contemporary music. He is also always keen to explore the compositions of less-known artists and introduce them
 		to orchestras and the public.
 	</p>
-	{#if !mobile || readMore}
+	{#if !mobile || showMore}
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
 			<br />
 			<p>
@@ -66,11 +66,11 @@
 		<button
 			class="btn btn-outline"
 			on:click={() => {
-				readMore = !readMore
-				if (!readMore) section.scrollIntoView()
+				showMore = !showMore
+				if (!showMore) section.scrollIntoView()
 			}}
 		>
-			{!readMore ? 'Show More' : 'Show Less'}
+			{!showMore ? 'Show More' : 'Show Less'}
 		</button>
 	{/if}
 </div>

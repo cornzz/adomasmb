@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
-    h1,
-    h2,
-    h3 {
-        @apply font-semibold;
-    }
+	:root {
+		font-family: 'Montserrat', sans-serif;
+		@apply bg-secondary scroll-smooth scroll-pt-16 bg-gradient-to-b;
+		@apply from-secondary via-secondary to-dark via-[100vh];
+	}
+
+	h1,
+	h2,
+	h3 {
+		@apply font-semibold;
+	}
 
 	h1 {
 		@apply text-3xl mt-1 mb-2;
@@ -25,10 +33,12 @@
 		@apply underline;
 	}
 
-    p {
-        @apply text-lg;
-    }
+	p {
+		@apply text-lg;
+	}
+}
 
+@layer components {
 	.btn {
 		@apply h-10 text-white min-w-[150px] transition-all;
 
@@ -43,6 +53,8 @@
 	}
 }
 
-@tailwind components;
-
-@tailwind utilities;
+@layer utilities {
+	.absolute-center {
+		@apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+	}
+}
