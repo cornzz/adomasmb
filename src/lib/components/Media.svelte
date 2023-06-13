@@ -1,109 +1,10 @@
 <script lang="ts">
+	import { initLightbox } from '$lib/helpers'
+	import { images, videos } from '$lib/stores'
+	import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css'
+	import 'photoswipe/style.css'
 	import { onMount } from 'svelte'
 	import { slide } from 'svelte/transition'
-	import { initLightbox } from '$lib/helpers'
-	import 'photoswipe/style.css'
-	import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css'
-
-	const images = [
-		{
-			large: 'adomas-mb-3.webp',
-			width: 2000,
-			height: 3000,
-			thumb: 'adomas-mb-3-small.webp',
-			caption: 'Photo by Eliso Babuadze © 2023'
-		},
-		{
-			large: 'adomas-mb-1.webp',
-			width: 2000,
-			height: 3000,
-			thumb: 'adomas-mb-1-small.webp',
-			caption: 'Photo by Eliso Babuadze © 2023'
-		},
-		{
-			large: 'adomas-mb-2.webp',
-			width: 2000,
-			height: 3000,
-			thumb: 'adomas-mb-2-small.webp',
-			caption: 'Photo by Eliso Babuadze © 2023'
-		},
-		{
-			large: 'adomas-mb-11.webp',
-			width: 2000,
-			height: 3000,
-			thumb: 'adomas-mb-11-small.webp',
-			caption: 'Photo by Gabrielius Jauniškis © 2022'
-		},
-		{
-			large: 'adomas-mb-15.webp',
-			width: 2048,
-			height: 1365,
-			thumb: 'adomas-mb-15-small.webp',
-			class: 'col-span-2',
-			caption: 'Photo by Jonas Šopa © 2022'
-		},
-		{
-			large: 'adomas-mb-9.webp',
-			width: 3000,
-			height: 2000,
-			thumb: 'adomas-mb-9-small.webp',
-			class: 'col-span-2',
-			caption: 'Photo by Eliso Babuadze © 2023'
-		},
-		{
-			large: 'adomas-mb-6.webp',
-			width: 3000,
-			height: 2000,
-			thumb: 'adomas-mb-6-small.webp',
-			class: 'col-span-2',
-			caption: 'Photo by Eliso Babuadze © 2023'
-		},
-		{
-			large: 'adomas-mb-14.webp',
-			width: 2048,
-			height: 1365,
-			thumb: 'adomas-mb-14-small.webp',
-			class: 'col-span-2',
-			caption: 'Photo by Jonas Šopa © 2022'
-		},
-		{
-			large: 'adomas-mb-4.webp',
-			width: 2000,
-			height: 3000,
-			thumb: 'adomas-mb-4-small.webp',
-			class: 'order-last sm:order-none',
-			caption: 'Photo by Eliso Babuadze © 2023'
-		},
-		{
-			large: 'adomas-mb-17.webp',
-			width: 2048,
-			height: 1365,
-			thumb: 'adomas-mb-17-small.webp',
-			class: 'col-span-2',
-			caption: 'Photo by Jonas Šopa © 2022'
-		},
-		{
-			large: 'adomas-mb-0.webp',
-			width: 2000,
-			height: 3000,
-			thumb: 'adomas-mb-0-small.webp',
-			caption: 'Photo by Eliso Babuadze © 2023'
-		}
-	]
-	const videos = [
-		{
-			id: '8BFuODOHbmA',
-			thumb: 'thumb-video-1.webp',
-			caption:
-				"Excerpt from J. Kaipainen's Piano Concerto<br>Helsinki Philharmonic Orchestra, soloist Joonas Ahonen"
-		},
-		{
-			id: 'wDqR5Z0MMRw',
-			thumb: 'thumb-video-2.webp',
-			caption:
-				"Excerpt from L. Bernstein's Symphonic Dances from West Side Story<br>Lithuanian National Symphony Orchestra"
-		}
-	]
 
 	let innerWidth: number
 	let showMore: boolean = false
@@ -152,6 +53,7 @@
 				target="_blank"
 			>
 				<img src="/images/gallery/{video.thumb}" alt="Video Thumbnail" loading="lazy" />
+				<span class="pswp-caption-content hidden">{@html video.caption}</span>
 				<svg
 					class="absolute-center z-10 transition-all duration-300 group-hover:scale-125"
 					xmlns="http://www.w3.org/2000/svg"
@@ -216,5 +118,9 @@
 		:global(iframe) {
 			@apply pointer-events-auto;
 		}
+	}
+
+	:global(.pswp__dynamic-caption--on-hor-edge) {
+		@apply !top-auto bottom-4;
 	}
 </style>

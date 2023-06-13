@@ -44,7 +44,7 @@ export function initLightbox(getIframeDimensions: () => [string, string]) {
     // TODO: navigating between video slides...
 
     lightbox.on('uiRegister', () => {
-        lightbox.pswp.ui.registerElement({
+        lightbox.pswp!.ui!.registerElement({
             name: 'download-button',
             order: 8,
             isButton: true,
