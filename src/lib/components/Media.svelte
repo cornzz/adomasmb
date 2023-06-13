@@ -97,7 +97,10 @@
 </div>
 
 <div class="flex justify-center mt-6">
-	<button class="btn btn-outline" on:click={() => (showMore = !showMore)}>
+	<button class="btn btn-outline" on:click={() => {
+		showMore = !showMore
+		if (!showMore) section.scrollIntoView()
+	}}>
 		<div class="flex items-center justify-center gap-1">
 			{!showMore ? 'Show More' : 'Show Less'}
 			<svg
