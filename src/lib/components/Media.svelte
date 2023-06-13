@@ -7,13 +7,19 @@
 	import { slide } from 'svelte/transition'
 
 	let innerWidth: number
+	let innerHeight: number
 	let showMore: boolean = false
 	let section: HTMLElement
 
 	function getIframeDimensions(): [string, string] {
-		const iframeWidth = innerWidth <= 560 ? innerWidth * (11 / 12) : innerWidth * 0.7
-		const iframeHeight = iframeWidth * (9 / 16)
-		return [`${iframeWidth}`, `${iframeHeight}`]
+		const maxWidth = innerWidth <= 560 ? innerWidth * (11 / 12) : innerWidth * 0.7
+		const maxHeight = innerHeight * 0.7
+		const iframeHeight = maxWidth * (9 / 16)
+		if (iframeHeight > maxHeight) {
+			const iframeWidth = maxHeight * (16 / 9)
+			return [iframeWidth.toString(), maxHeight.toString()]
+		}
+		return [maxWidth.toString(), iframeHeight.toString()]
 	}
 
 	onMount(() => {
@@ -21,7 +27,7 @@
 	})
 </script>
 
-<svelte:window bind:innerWidth />
+<svelte:window bind:innerWidth bind:innerHeight />
 
 <div id="gallery" bind:this={section}>
 	<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pb-4">
