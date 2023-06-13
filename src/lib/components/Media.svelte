@@ -58,7 +58,13 @@
 				data-youtube-url="https://www.youtube-nocookie.com/embed/{video.id}?hd=1&rel=0&modestbranding=1&enablejsapi=1"
 				target="_blank"
 			>
-				<img src="/images/gallery/{video.thumb}" alt="Video Thumbnail" loading="lazy" />
+				<img
+					src="/images/gallery/{video.thumb}"
+					alt="Video Thumbnail"
+					width="1280"
+					height="720"
+					loading="lazy"
+				/>
 				<span class="pswp-caption-content hidden">{@html video.caption}</span>
 				<svg
 					class="absolute-center z-10 transition-all duration-300 group-hover:scale-125"
@@ -97,10 +103,13 @@
 </div>
 
 <div class="flex justify-center mt-6">
-	<button class="btn btn-outline" on:click={() => {
-		showMore = !showMore
-		if (!showMore) section.scrollIntoView()
-	}}>
+	<button
+		class="btn btn-outline"
+		on:click={() => {
+			showMore = !showMore
+			if (!showMore) section.scrollIntoView()
+		}}
+	>
 		<div class="flex items-center justify-center gap-1">
 			{!showMore ? 'Show More' : 'Show Less'}
 			<svg
