@@ -15,7 +15,8 @@ export default {
 				input: '0 0 0px 2px theme("colors.primary")'
 			},
 			screens: {
-				gradient: '1200px'
+				gradient: '1200px',
+				shortScreens: {'raw': '(max-height: 700px) and (min-width: 1150px)'}
 			}
 		}
 	},

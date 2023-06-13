@@ -12,11 +12,15 @@
 <svelte:window bind:scrollY bind:innerHeight />
 <svelte:head>
 	<title>Home – Adomas Morkūnas-Budrys</title>
-	<meta name="description" content="Adomas Morkūnas-Budrys is one of the most promising Lithuanian conductors of his generation. Known for his wide range of musical tastes, Adomas is particularly passionate about large-scale symphonic works, Nordic and contemporary music. He is also always keen to explore the compositions of less-known artists and introduce them to orchestras and the public.">
+	<meta
+		name="description"
+		content="Adomas Morkūnas-Budrys is one of the most promising Lithuanian conductors of his generation. Known for his wide range of musical tastes, Adomas is particularly passionate about large-scale symphonic works, Nordic and contemporary music. He is also always keen to explore the compositions of less-known artists and introduce them to orchestras and the public."
+	/>
 </svelte:head>
 
 <div class="min-h-screen">
-	<header class="relative flex items-center justify-between px-[3vw] py-6 md:px-[5vw] md:py-8 text-white bg-primary/50">
+	<header class="relative flex items-center justify-between px-[3vw] py-6 md:px-[5vw]
+				   md:py-8 shortScreens:py-4 text-white bg-primary/50">
 		<div class="flex items-center">
 			<img
 				class="p-3 h-12 border-2 w-auto md:h-16 md:border-4 border-white bg-primary/50"
@@ -43,7 +47,8 @@
 	<img class="-translate-y-full" src="/images/gradient.webp" alt="Gradient" loading="lazy" />
 </div>
 
-<div class="w-11/12 max-w-5xl px-6 sm:px-16 py-10 mx-auto bg-primary relative top-[-50px] min-[552px]:max-md:top-0">
+<div class="w-11/12 max-w-5xl px-6 sm:px-16 py-10 mx-auto bg-primary relative
+			top-[-50px] min-[552px]:max-md:top-0 shortScreens:top-0">
 	<About />
 </div>
 
