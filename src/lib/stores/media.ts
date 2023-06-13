@@ -64,7 +64,6 @@ export const images = [
         width: 2000,
         height: 3000,
         thumb: 'adomas-mb-4-small.webp',
-        class: 'order-last sm:order-none',
         caption: 'Photo by Eliso Babuadze © 2023'
     },
     {
@@ -72,7 +71,7 @@ export const images = [
         width: 2048,
         height: 1365,
         thumb: 'adomas-mb-17-small.webp',
-        class: 'col-span-2',
+        class: 'col-span-2 order-last sm:order-none',
         caption: 'Photo by Jonas Šopa © 2022'
     },
     {
