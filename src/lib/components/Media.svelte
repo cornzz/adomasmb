@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
 	import { slide } from 'svelte/transition'
-	import PhotoSwipeLightbox from 'photoswipe/lightbox'
+	import { initLightbox } from '$lib/helpers'
 	import 'photoswipe/style.css'
 
 	const images = [
@@ -60,47 +60,7 @@
 	}
 
 	onMount(() => {
-		const lightbox = new PhotoSwipeLightbox({
-			gallery: '#gallery',
-			children: 'a',
-			imageClickAction: 'close',
-			tapAction: 'close',
-			pswpModule: () => import('photoswipe')
-		})
-
-		lightbox.addFilter('itemData', (itemData: any) => {
-			const youtubeUrl = itemData.element.dataset.youtubeUrl
-			if (youtubeUrl) itemData.youtubeUrl = youtubeUrl
-			return itemData
-		})
-
-		lightbox.on('contentLoad', (event: any) => {
-			const { content, isLazy } = event
-			console.log('contentload', content, isLazy)
-			if (content.type === 'youtube' && isLazy) {
-				event.preventDefault()
-				content.element = document.createElement('div')
-				content.element.className = 'pswp__youtube-container'
-
-				const iframe = document.createElement('iframe')
-				const [width, height] = getIframeDimensions()
-				iframe.setAttribute('allowfullscreen', '')
-				iframe.setAttribute(
-					'allow',
-					'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-				)
-				iframe.setAttribute('frameborder', '0')
-				iframe.setAttribute('width', width)
-				iframe.setAttribute('height', height)
-				iframe.setAttribute('class', 'absolute-center')
-				iframe.src = content.data.youtubeUrl
-				content.element.appendChild(iframe)
-			}
-		})
-
-		// TODO: navigating between video slides...
-
-		lightbox.init()
+		initLightbox(getIframeDimensions)
 	})
 </script>
 
