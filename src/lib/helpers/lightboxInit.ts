@@ -41,6 +41,15 @@ export function initLightbox(getIframeDimensions: () => [string, string]) {
         }
     })
 
+    lightbox.on('contentResize', ({ content }) => {
+        if (content.type === 'youtube' && content.element?.firstChild) {
+            const iframe = content.element.firstChild as HTMLIFrameElement
+            const [width, height] = getIframeDimensions()
+            iframe.setAttribute('width', width)
+            iframe.setAttribute('height', height)
+        }
+    })
+
     // TODO: navigating between video slides...
 
     lightbox.on('uiRegister', () => {
