@@ -55,7 +55,7 @@
 					   after:transition-all after:duration-300 hover:after:bg-black/20 group"
 				href="https://www.youtube.com/watch?v={video.id}"
 				data-pswp-type="youtube"
-				data-youtube-url="https://www.youtube-nocookie.com/embed/{video.id}?autoplay=1&hd=1&rel=0"
+				data-youtube-url="https://www.youtube-nocookie.com/embed/{video.id}?hd=1&rel=0&modestbranding=1&enablejsapi=1"
 				target="_blank"
 			>
 				<img src="/images/gallery/{video.thumb}" alt="Video Thumbnail" loading="lazy" />
@@ -85,8 +85,8 @@
 					<img
 						src="/images/gallery/{image.thumb}"
 						alt="Adomas Morkūnas-Budrys"
-						width={(image.width / image.height) < 1 ? 300 : 600}
-						height={(image.width / image.height) < 1 ? 450 : 400}
+						width={image.width / image.height < 1 ? 300 : 600}
+						height={image.width / image.height < 1 ? 450 : 400}
 						loading="lazy"
 					/>
 					<span class="pswp-caption-content hidden">{image.caption ?? ''}</span>
@@ -97,10 +97,7 @@
 </div>
 
 <div class="flex justify-center mt-6">
-	<button
-		class="btn btn-outline"
-		on:click={() => showMore = !showMore}
-	>
+	<button class="btn btn-outline" on:click={() => (showMore = !showMore)}>
 		<div class="flex items-center justify-center gap-1">
 			{!showMore ? 'Show More' : 'Show Less'}
 			<svg

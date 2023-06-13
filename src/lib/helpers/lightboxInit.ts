@@ -1,5 +1,7 @@
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
 import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin'
+import InitYouTubePlayer from 'youtube-player'
+import type { YouTubePlayer } from 'youtube-player/dist/types'
 
 export function initLightbox(getIframeDimensions: () => [string, string]) {
     const lightbox = new PhotoSwipeLightbox({
@@ -19,8 +21,8 @@ export function initLightbox(getIframeDimensions: () => [string, string]) {
     })
 
     lightbox.on('contentLoad', (event: any) => {
-        const { content, isLazy } = event
-        if (content.type === 'youtube' && isLazy) {
+        const { content } = event
+        if (content.type === 'youtube') {
             event.preventDefault()
             content.element = document.createElement('div')
             content.element.className = 'pswp__youtube-container'
@@ -36,8 +38,25 @@ export function initLightbox(getIframeDimensions: () => [string, string]) {
             iframe.setAttribute('width', width)
             iframe.setAttribute('height', height)
             iframe.setAttribute('class', 'absolute-center')
+            content.player = new Promise((resolve) => {
+                iframe.addEventListener('load', () => resolve(InitYouTubePlayer(iframe)))
+            })
             iframe.src = content.data.youtubeUrl
             content.element.appendChild(iframe)
+        }
+    })
+
+    lightbox.on('contentActivate', async ({ content }) => {
+        if (content.type === 'youtube' && content.element?.firstChild) {
+            const player: YouTubePlayer = await content.player
+            player.playVideo()
+        }
+    })
+
+    lightbox.on('contentDeactivate', async ({ content }) => {
+        if (content.type === 'youtube' && content.element?.firstChild) {
+            const player: YouTubePlayer = await content.player
+            player.stopVideo()
         }
     })
 
@@ -49,8 +68,6 @@ export function initLightbox(getIframeDimensions: () => [string, string]) {
             iframe.setAttribute('height', height)
         }
     })
-
-    // TODO: navigating between video slides...
 
     lightbox.on('uiRegister', () => {
         lightbox.pswp!.ui!.registerElement({
