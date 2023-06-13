@@ -59,6 +59,8 @@
 				student, at the Norwegian Academy of Music. Adomas is continuing his Master's degree studies at the
 				Sibelius Academy.
 			</p>
+			<br />
+			<p>Updated in June 2023.</p>
 		</div>
 	{/if}
 	{#if mobile}
