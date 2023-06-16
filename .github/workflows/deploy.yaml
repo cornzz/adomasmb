@@ -44,4 +44,3 @@ jobs:
           **/node_modules/**
           **/.DS_Store
           **/.well-known
-        dry-run: true
