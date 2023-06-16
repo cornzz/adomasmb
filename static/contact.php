@@ -1,4 +1,13 @@
 <?php
+    if (
+        !isset($_POST['name']) ||
+        !isset($_POST['email']) ||
+        !isset($_POST['message']) ||
+        !isset($_POST['spamcheck1']) ||
+        !isset($_POST['spamcheck2'])
+    ) {
+        exit();
+    }
     try {
         $name = htmlspecialchars($_POST['name'], ENT_QUOTES); 
         $email = htmlspecialchars($_POST['email'], ENT_QUOTES);
