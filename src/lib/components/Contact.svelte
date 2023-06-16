@@ -93,7 +93,7 @@
 
 	input,
 	textarea {
-		@apply min-h-[40px] px-3 py-2 bg-white/80;
+		@apply min-h-[40px] px-3 py-2 bg-white/80 rounded-none;
 
 		&::placeholder {
 			@apply text-[#636973];
