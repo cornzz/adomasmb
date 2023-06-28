@@ -39,8 +39,7 @@
 			<p>
 				On different occasions, Adomas has worked with such orchestras as the Finnish Radio Symphony, Manchester
 				Camerata, Helsinki Philharmonic, Lithuanian National Symphony, Thessaloniki State Symphony, Lithuanian
-				Chamber, Olten Philharmonic of Izmir, Südwestdeutsche Philharmonie Konstanz, MÁV Symphony, Joensuu City,
-				St. Christopher Chamber, and others. He has worked in such opera houses as Bavarian State Opera and the
+				Chamber, Olten Philharmonic of Izmir, and others. He has worked in such opera houses as Bavarian State Opera and the
 				Lyon Opera House and collaborated with and assisted such conductors as Mirga Gražinytė-Tyla, Titus
 				Engel, Miguel Pérez Iñesta, and Modestas Pitrėnas. In masterclasses, he has worked with Paavo Järvi,
 				Bernard Haitink, Jorma Panula, Nicolas Pasquet, Larry Rachleff, Nicholas Collon, Pavel Baleff, Eva
