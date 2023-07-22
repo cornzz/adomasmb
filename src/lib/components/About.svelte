@@ -57,7 +57,7 @@
 				19 orchestral compositions.
 			</p>
 			<br />
-			<p>Updated in June 2023.</p>
+			<p>Updated in July 2023.</p>
 		</div>
 	{/if}
 	{#if mobile}
