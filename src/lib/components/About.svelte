@@ -45,10 +45,9 @@
 			<br />
 			<p>
 				On different occasions, Adomas has worked with such orchestras as the Finnish Radio Symphony, Manchester
-				Camerata, Helsinki Philharmonic, Lithuanian National Symphony, Thessaloniki State Symphony, Lithuanian
-				Chamber, Olten Philharmonic of Izmir, and others. He has worked in such opera houses as Bavarian State Opera and the
-				Lyon Opera House. In masterclasses, he has worked with Paavo Järvi, Bernard Haitink, Jorma Panula, Nicolas Pasquet,
-				Larry Rachleff, Nicholas Collon, Pavel Baleff, Eva Ollikainen, and others.
+				Camerata, Helsinki Philharmonic, Thessaloniki State Symphony, Lithuanian Chamber, Olten Philharmonic of Izmir, and
+				in such opera houses as Bavarian State Opera and the Lyon Opera House. In masterclasses, he has worked with Paavo Järvi,
+				Bernard Haitink, Jorma Panula, Nicolas Pasquet, Larry Rachleff, Nicholas Collon, Pavel Baleff, Eva Ollikainen, and others.
 			</p>
 			<br />
 			<p>
