@@ -37,7 +37,7 @@
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
 			<br />
 			<p>
-				In the 2023/24 season, Adomas will give concerts with Kremerata Baltica, Oulu Sinfonia, and Lithuanian National
+				In the 2023/24 season, Adomas will perform with Kremerata Baltica, Oulu Sinfonia, and Lithuanian National
 				Symphony orchestras. He will also assist Mirga Gražinytė-Tyla with two M. Weinberg operas: "The Passenger"
 				at the Teatro Real in Madrid and "The Idiot” at the Salzburgfestival 2024. Moreover, in collaboration with
 				Modestas Pitrėnas, Adomas will appear in one of the concerts in 2024 April with the Swiss Youth Symphony Orchestra.
