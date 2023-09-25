@@ -37,7 +37,7 @@
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
 			<br />
 			<p>
-				In the 2023/24 season, Adomas's engagements will include concerts with Kremerata Baltica, Oulu Sinfonia,
+				In the 2023/24 season, Adomas's engagements include concerts with Kremerata Baltica, Oulu Sinfonia,
 				and Lithuanian National Symphony orchestras. He will also assist Mirga Gražinytė-Tyla (with two M. Weinberg operas:
 				'The Passenger' at the Teatro Real and 'The Idiot' at the Salzburgfestival 2024) and Sergi Roca Bru (with
 				C. Millöcker's operetta 'Der arme Jonathan' Schleswig-Holsteinisches Landestheater). In collaboration with
