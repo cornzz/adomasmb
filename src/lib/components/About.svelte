@@ -42,8 +42,7 @@
 				'The Passenger' at the Teatro Real and 'The Idiot' at the Salzburgfestival 2024) and Sergi Roca Bru (with
 				C. Millöcker's operetta 'Der arme Jonathan' Schleswig-Holsteinisches Landestheater). In collaboration with
 				Modestas Pitrėnas, Adomas will also give one of the concerts with the Swiss Youth Symphony Orchestra.
-				At the Sibelius Academy, as one of his Master's degree projects, Adomas will conduct W. A. Mozart's
-				'Le nozze di Figaro' at the Musiikitalo.
+				As part of his Master’s exam, Adomas will conduct W. A. Mozart's 'Le nozze di Figaro' at the Musiikitalo.
 			</p>
 			<br />
 			<p>
