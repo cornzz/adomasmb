@@ -1,4 +1,6 @@
 <?php
+// Not currently in use
+
 if (
 	!isset($_POST['name']) ||
 	!isset($_POST['email']) ||

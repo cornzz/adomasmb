@@ -1,3 +1,5 @@
+# Not currently in use
+
 RewriteEngine On
 # Redirect to https
 RewriteCond %{HTTPS} off

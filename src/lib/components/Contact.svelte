@@ -1,27 +1,27 @@
 <script lang="ts">
 	import { dev } from '$app/environment'
 	import { onMount } from 'svelte'
+	import emailjs from '@emailjs/browser'
+
+	const oneDayinMs = 1000 * 60 * 60 * 24
+	const serviceID = 'default_service'
+	const templateID = 'template_ahjsm5k'
 
 	let ready: boolean = false
 	let loading: boolean = false
 	let contactSuccess: boolean = false
 	let contactFailure: boolean = false
 	let form: HTMLFormElement
-	let spamcheck1Input: HTMLInputElement
-	let spamcheck2Input: HTMLInputElement
 
 	async function submit(): Promise<void> {
 		loading = true
-		const formData = new FormData(form)
-		const response = await fetch('/contact.php', {
-			method: 'POST',
-			body: formData
-		})
-		if (response.ok) {
+		try {
+			await emailjs.sendForm(serviceID, templateID, form, 'W2HxHs5S0KYEqvSBu')
 			form.reset()
 			contactSuccess = true
 			localStorage.setItem('contactedAt', `${+new Date()}`)
-		} else {
+		} catch (error) {
+			console.log('Error sending message:', error)
 			contactFailure = true
 		}
 		loading = false
@@ -30,9 +30,8 @@
 	onMount(() => {
 		const contactedAt = localStorage.getItem('contactedAt')
 		if (contactedAt) {
-			contactSuccess = new Date(+contactedAt + 86400000) >= new Date()
+			contactSuccess = !dev && new Date(+contactedAt + oneDayinMs) >= new Date()
 		}
-		setTimeout(() => spamcheck1Input && (spamcheck1Input.value = 'amb_spam_check_1_passed'), 10000)
 		ready = true
 	})
 </script>
@@ -43,8 +42,8 @@
 	<div class="text-white">Thank you for contacting me, I will get back to you as soon as possible!</div>
 {:else if ready}
 	<form class="flex flex-col gap-2" class:loading on:submit|preventDefault={submit} bind:this={form}>
-		<input name="name" type="text" placeholder="Your Name" required={!dev} />
-		<input name="email" type="email" placeholder="Your E-Mail Address" required={!dev} />
+		<input name="from_name" type="text" placeholder="Your Name" required={!dev} />
+		<input name="reply_to" type="email" placeholder="Your E-Mail Address" required={!dev} />
 		<textarea
 			name="message"
 			cols="30"
@@ -52,10 +51,7 @@
 			placeholder="Your Message"
 			minlength="10"
 			required={!dev}
-			on:focus={() => (spamcheck2Input.value = 'amb_spam_check_2_passed')}
 		/>
-		<input name="spamcheck1" type="hidden" bind:this={spamcheck1Input} />
-		<input name="spamcheck2" type="hidden" bind:this={spamcheck2Input} />
 		<div class="flex justify-end items-center gap-3">
 			{#if contactFailure}
 				<div class="text-red-400">Something went wrong... Please try again later!</div>
