@@ -6,6 +6,7 @@
 	const oneDayinMs = 1000 * 60 * 60 * 24
 	const serviceID = 'default_service'
 	const templateID = 'template_ahjsm5k'
+	const publicKey = 'W2HxHs5S0KYEqvSBu'
 
 	let ready: boolean = false
 	let loading: boolean = false
@@ -16,7 +17,7 @@
 	async function submit(): Promise<void> {
 		loading = true
 		try {
-			await emailjs.sendForm(serviceID, templateID, form, 'W2HxHs5S0KYEqvSBu')
+			await emailjs.sendForm(serviceID, templateID, form, publicKey)
 			form.reset()
 			contactSuccess = true
 			localStorage.setItem('contactedAt', `${+new Date()}`)
