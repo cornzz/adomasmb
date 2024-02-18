@@ -29,26 +29,27 @@
 	<h1 id="about" bind:this={section}>About</h1>
 	<p>
 		Adomas Morkūnas-Budrys is one of the most promising Lithuanian conductors of his generation.
-		He studied with Prof. Johannes Schlaefli at the Zürich University of the Arts and, as an exchange
-		student, at the Norwegian Academy of Music. Adomas is continuing his studies at the Sibelius Academy.
+		He studied with Prof. Johannes Schlaefli at the Zürich University of the Arts and, as an exchange student,
+		at the Norwegian Academy of Music. Adomas is continuing his studies at the Sibelius Academy.
 
 	</p>
 	{#if !mobile || showMore}
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
 			<br />
 			<p>
-				In the 2023/24 season, Adomas's engagements include concerts with Kremerata Baltica, Oulu Sinfonia,
-				and Lithuanian National Symphony orchestras. He will also assist Mirga Gražinytė-Tyla (with two M. Weinberg operas:
-				'The Passenger' at the Teatro Real and 'The Idiot' at the Salzburgfestival 2024) and Sergi Roca Bru (with
-				C. Millöcker's operetta 'Der arme Jonathan' Schleswig-Holsteinisches Landestheater). In collaboration with
-				Modestas Pitrėnas, Adomas will also give one of the concerts with the Swiss Youth Symphony Orchestra.
+				In the 2023/24 season, Adomas was reinvited to conduct the Lithuanian National Symphony Orchestra and will debut
+				with such orchestras as Kremerata Baltica, Oulu Sinfonia, and Swiss Youth Symphony. As a Head of Music (Studienleiter),
+				Repetiteur, and Assistant conductor, Adomas will work at the Salzburg Festival in the summer of 2024 on M. Weinberg's opera
+				production "The Idiot". He will also assist Mirga Gražinytė-Tyla with another M. Weinberg's opera, "The Passenger", at Teatro Real in Madrid.
+				As Repetiteur and Assistant Conductor, he will work at the Schleswig-Holsteinisches Landestheater for the production of C. Millöcker's
+				operetta "Der arme Jonathan".
 			</p>
 			<br />
 			<p>
-				On different occasions, Adomas has worked with such orchestras as the Finnish Radio Symphony, Manchester
-				Camerata, Helsinki Philharmonic, Thessaloniki State Symphony, Lithuanian Chamber, Olten Philharmonic of Izmir, and
-				in such opera houses as Bavarian State Opera and the Lyon Opera House. In masterclasses, he has worked with Paavo Järvi,
-				Bernard Haitink, Jorma Panula, Nicolas Pasquet, Larry Rachleff, Nicholas Collon, Pavel Baleff, Eva Ollikainen, and others.
+				In the last few years, Adomas appeared with orchestras such as the Finnish Radio Symphony, Helsinki Philharmonic, Manchester Camerata,
+				Lithuanian National Symphony, Lithuanian Chamber, Thessaloniki State Symphony, and Südwestdeutsche Philharmonie Konstanz.
+				As Assistant conductor, he has also worked in opera houses such as Bayerische Staatsoper and Opera de Lyon. Adomas has received valuable
+				advice from such maestros as Paavo Järvi, Bernard Haitink, Jorma Panula, Nicolas Pasquet, Larry Rachleff, and others.
 			</p>
 			<br />
 			<p>
@@ -57,8 +58,6 @@
 				happened three times. Being a chief conductor of the Future Symphony Orchestra, he has already premiered
 				19 orchestral compositions.
 			</p>
-			<br />
-			<p>Updated in July 2023.</p>
 		</div>
 	{/if}
 	{#if mobile}

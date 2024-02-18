@@ -84,15 +84,5 @@ export const images = [
 ]
 
 export const videos = [
-	{
-		id: '8BFuODOHbmA',
-		thumb: 'thumb-video-1.webp',
-		caption: "Excerpt from J. Kaipainen's Piano Concerto<br>Helsinki Philharmonic Orchestra, soloist Joonas Ahonen"
-	},
-	{
-		id: 'wDqR5Z0MMRw',
-		thumb: 'thumb-video-2.webp',
-		caption:
-			"Excerpt from L. Bernstein's Symphonic Dances from West Side Story<br>Lithuanian National Symphony Orchestra"
-	}
+	
 ]
