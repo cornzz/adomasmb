@@ -38,8 +38,8 @@
 			<br />
 			<p>
 				In the 2023/24 season, Adomas was reinvited to conduct the Lithuanian National Symphony Orchestra and will debut
-				with such orchestras as Kremerata Baltica, Oulu Sinfonia, and Swiss Youth Symphony. As a Head of Music (Studienleiter),
-				Repetiteur, and Assistant conductor, Adomas will work at the Salzburg Festival in the summer of 2024 on M. Weinberg's opera
+				with such orchestras as Kremerata Baltica, Oulu Sinfonia, and Swiss Youth Symphony. As a Repetiteur, and Assistant conductor,
+				Adomas will work at the Salzburg Festival in the summer of 2024 on M. Weinberg's opera
 				production "The Idiot". He will also assist Mirga Gražinytė-Tyla with another M. Weinberg's opera, "The Passenger", at Teatro Real in Madrid.
 				As Repetiteur and Assistant Conductor, he will work at the Schleswig-Holsteinisches Landestheater for the production of C. Millöcker's
 				operetta "Der arme Jonathan".
