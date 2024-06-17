@@ -48,8 +48,8 @@
 			</p>
 			<br />
 			<p>
-				In the last few years, on different occasions, Adomas appeared with orchestras such as the Finnish Radio Symphony, Helsinki Philharmonic,
-				Lithuanian National Symphony, Lithuanian Chamber, Thessaloniki State Symphony, and others. As Assistant conductor, he has also worked in
+				In the last few years, on different occasions, Adomas appeared with orchestras such as the Finnish Radio Symphony, Helsinki Philharmonic, Lithuanian Chamber,
+				Manchester Camerata, Thessaloniki State Symphony, and others. As Assistant conductor, he has also worked in
 				opera houses such as Bayerische Staatsoper and Opera de Lyon. Adomas has received valuable advice from such maestros as Paavo Järvi, 
 				Bernard Haitink, Jorma Panula, Nicolas Pasquet, Larry Rachleff, and others.
 			</p>
