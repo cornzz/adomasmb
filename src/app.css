@@ -7,7 +7,7 @@
 @layer base {
 	:root {
 		font-family: 'Montserrat', sans-serif;
-		@apply bg-secondary scroll-smooth scroll-pt-16 bg-gradient-to-b;
+		@apply bg-black scroll-smooth scroll-pt-16 bg-gradient-to-b;
 		@apply from-black via-black to-secondary via-[100vh];
 	}
 
