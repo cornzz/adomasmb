@@ -9,7 +9,7 @@ export default {
 				dark: '#0d0f12'
 			},
 			backgroundImage: {
-				'landing-image': 'url("/images/adomas-mb-cover.webp")'
+				'landing-image': 'url("/images/adomas-mb-cover.jpg")'
 			},
 			boxShadow: {
 				input: '0 0 0px 2px theme("colors.primary")'

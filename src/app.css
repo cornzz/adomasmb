@@ -8,7 +8,7 @@
 	:root {
 		font-family: 'Montserrat', sans-serif;
 		@apply bg-secondary scroll-smooth scroll-pt-16 bg-gradient-to-b;
-		@apply from-secondary via-secondary to-dark via-[100vh];
+		@apply from-black via-black to-secondary via-[100vh];
 	}
 
 	h1,
