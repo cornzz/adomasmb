@@ -35,9 +35,9 @@
 	})
 </script>
 
-<div class="relative w-10/12 max-w-6xl mx-auto mt-[55vh] mb-[calc(5vw+80px)] text-white bg-primary/50 z-10">
+<div class="relative w-full sm:w-10/12 max-w-6xl mx-auto mt-[65vh] mb-[calc(5vw+80px)] text-white z-10">
 	<svg
-		class="absolute h-8 -top-8 left-8 px-2 pt-2 bg-primary/50"
+		class="absolute h-8 -top-8 left-8 px-2 pt-2 bg-inherit"
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 511.915 341.269"
 	>
@@ -76,5 +76,7 @@
 		</svg>
 	</button>
 
-	<div class="absolute bottom-0 h-[1px] bg-white" style="width: {$timeoutBar}%" />
+	<div class="relative mx-10">
+		<div class="absolute bottom-0 h-[1px] bg-white" style="width: {$timeoutBar}%" />
+	</div>
 </div>
