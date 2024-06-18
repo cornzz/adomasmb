@@ -38,12 +38,12 @@
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
 			<br />
 			<p>
-				In the summer of 2024, Adomas will debut at the Salzburg Festival, where he will work as Assistant conductor and Repetiteur 
-				on M. Weinberg’s opera The Idiot. He will also debut at the Lithuanian National Opera and Ballet Theatre as a Conductor for the 
-				ballet production Le Parc. In the 2023/24 season, Adomas was reinvited to conduct the Lithuanian National Symphony Orchestra 
+				In the summer of 2024, Adomas will debut at the Salzburg Festival, where he will work as Assistant Conductor and Repetiteur 
+				on M. Weinberg’s opera <i>The Idiot</i>. He will also debut at the Lithuanian National Opera and Ballet Theatre as a Conductor for the 
+				ballet production <i>Le Parc</i>. In the 2023/24 season, Adomas was reinvited to conduct the Lithuanian National Symphony Orchestra 
 				and debuted with such orchestras as Kremerata Baltica, Oulu Sinfonia, and Swiss Youth Symphony. He also assisted Mirga Gražinytė-Tyla 
-				with another M. Weinberg's opera, The Passenger, at Teatro Real in Madrid. As Repetiteur and Assistant Conductor, he worked 
-				at the Schleswig-Holsteinisches Landestheater for the production of C. Millöcker's operetta Der arme Jonathan.
+				with another M. Weinberg's opera, <i>The Passenger</i>, at Teatro Real in Madrid. As Repetiteur and Assistant Conductor, he worked 
+				at the Schleswig-Holstein State Theatre for the production of C. Millöcker's operetta <i>Der arme Jonathan</i>.
 
 			</p>
 			<br />
