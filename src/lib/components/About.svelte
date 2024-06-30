@@ -55,9 +55,9 @@
 			</p>
 			<br />
 			<p>
-				Alongside conducting, Adomas is also a composer, arranger, pianist, and organizer of various musical
+				Alongside conducting, Adomas is also an arranger, pianist, and organizer of various musical
 				events. Since 2018, Adomas has been the main organizer of the Future Symphony Competition, which has
-				happened three times. Being a chief conductor of the Future Symphony Orchestra, he has already premiered
+				happened three times. Being the chief conductor of the Future Symphony Orchestra, he has already premiered
 				19 orchestral compositions.
 			</p>
 		</div>
