@@ -31,9 +31,9 @@
 			/>
 			<span class="ml-3 md:text-3xl md:ml-8 font-semibold">Adomas Morkūnas-Budrys</span>
 		</div>
-		<a class="ml-4" href="https://instagram.com/adomasmb" target="_blank">
+		<!-- <a class="ml-4" href="https://instagram.com/adomasmb" target="_blank">
 			<img src="/images/instagram.svg" alt="Instagram Logo" width="20" height="20" />
-		</a>
+		</a> -->
 	</header>
 
 	<div class="absolute left-0 top-0 w-full h-screen -z-10">
