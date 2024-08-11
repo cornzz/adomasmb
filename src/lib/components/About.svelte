@@ -39,7 +39,7 @@
 			<br />
 			<p>
 				In the summer of 2024, Adomas debuted at the Salzburg Festival, where he worked as Assistant Conductor and Repetiteur 
-				on M. Weinberg’s opera <i>The Idiot</i>. He also debuted at the Lithuanian National Opera and Ballet Theatre as a Conductor for the 
+				on M. Weinberg’s opera <i>The Idiot</i>, and at the Lithuanian National Opera and Ballet Theatre as a Conductor for the 
 				ballet production <i>Le Parc</i>. In the 2023/24 season, Adomas was reinvited to conduct the Lithuanian National Symphony Orchestra 
 				and debuted with such orchestras as Kremerata Baltica, Oulu Sinfonia, and Swiss Youth Symphony. He also assisted Mirga Gražinytė-Tyla 
 				with another M. Weinberg's opera, <i>The Passenger</i>, at Teatro Real in Madrid. As Repetiteur and Assistant Conductor, he worked 
