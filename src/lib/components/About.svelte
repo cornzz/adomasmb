@@ -29,8 +29,8 @@
 	<h1 id="about" bind:this={section}>About</h1>
 	<p>
 		Lithuanian conductor Adomas Morkūnas-Budrys recently made his debut at the renowned Salzburg Festival, serving as Assistant Conductor 
-		and Repetiteur for M. Weinberg’s [i]The Idiot[/i], as well as assisting in the production of [i]The Passenger[/i] at Teatro Real in Madrid. His celebrated debut 
-		at the Lithuanian National Opera, conducting the ballet [i]Le Parc[/i], further demonstrated his versatility and command 
+		and Repetiteur for M. Weinberg’s The Idiot, as well as assisting in the production of The Passenger at Teatro Real in Madrid. His celebrated debut 
+		at the Lithuanian National Opera, conducting the ballet Le Parc, further demonstrated his versatility and command 
 		on the podium. Throughout the 2023/24 season, Adomas continued to make his mark, leading ensembles such as Kremerata Baltica,
 		Oulu Sinfonia, Swiss Youth Symphony, and the Lithuanian National Symphony Orchestra.
 	</p>
