@@ -19,8 +19,9 @@
 </svelte:head>
 
 <div class="min-h-screen flex flex-col">
-	<header class="relative flex items-center justify-between px-[3vw] py-6 md:px-[5vw]
-				   md:py-8 shortScreens:py-4 text-white">
+	<header
+		class="relative flex items-center justify-between px-[3vw] py-6 md:px-[5vw]md:py-8 shortScreens:py-4 text-white"
+	>
 		<div class="flex items-center">
 			<img
 				class="p-3 h-12 border-2 w-auto md:h-16 md:border-4 border-white"
@@ -43,8 +44,10 @@
 	<Quotes />
 </div>
 
-<div class="w-11/12 max-w-5xl px-6 sm:px-16 py-10 mx-auto bg-primary relative
-			top-[-50px] min-[552px]:max-md:top-0 shortScreens:top-0">
+<div
+	class="w-11/12 max-w-5xl px-6 sm:px-16 py-10 mx-auto bg-primary relative
+			top-[-50px] min-[552px]:max-md:top-0 shortScreens:top-0"
+>
 	<About />
 </div>
 
@@ -56,7 +59,7 @@
 	<Contact />
 </div>
 
-<footer class="py-2 text-white flex flex-col items-center justify-center sm:flex-row gap-x-2">
+<footer class="py-2 text-white flex flex-col items-center justify-center text-sm sm:flex-row gap-x-2">
 	<span>© {year ?? '20XX'} Adomas Morkūnas-Budrys</span>
 	<span class="hidden sm:block">|</span>
 	<span>Design by <a href="https://corny.me" target="_blank">corny</a></span>
