@@ -28,7 +28,7 @@
 <div class="text-white">
 	<h1 id="about" bind:this={section}>About</h1>
 	<p>
-		Adomas Morkūnas-Budrys is a Lithuanian conductor who recently debuted at the prestigious Salzburg Festival, serving as Assistant Conductor and Repetiteur for M. Weinberg’s <i>The Idiot</i>. He also assisted in another production of Weinberg’s operas, <i>The Passenger</i>, at Teatro Real in Madrid and C. Millöcker’s operetta <i>Der arme Jonathan</i> at <i>Schleswig-Holschteinisches Landestheater</i>. Throughout the 2023/24 season, Adomas continued to make his mark, leading ensembles such as Kremerata Baltica, Oulu Sinfonia, Swiss Youth Symphony, and the Lithuanian National Symphony Orchestra.
+		Adomas Morkūnas-Budrys is a Lithuanian conductor who recently debuted at the prestigious Salzburg Festival, serving as Assistant Conductor and Repetiteur for M. Weinberg’s <i>The Idiot</i>. Throughout the 2023/24 season, Adomas continued to make his mark, leading ensembles such as Kremerata Baltica, Oulu Sinfonia, Swiss Youth Symphony, and the Lithuanian National Symphony Orchestra, as well as working in such opera theatres as <i>Teatro Real</i> (on M. Weinberg's opera <i>The Passenger</i>) and <i>Schleswig-Holschteinisches Landestheater</i> (on C. Millöcker’s operetta <i>Der arme Jonathan</i>).
 	</p>
 	{#if !mobile || showMore}
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
