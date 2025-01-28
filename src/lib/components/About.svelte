@@ -34,7 +34,7 @@
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
 			<br />
 			<p>
-				In recent years, Adomas has built a remarkable portfolio of engagements with leading orchestras and institutions. His recent highlights include performances with the Lahti Symphony, Jyväskylä Symphony, and the Lithuanian National Opera and Ballet Theatre orchestras, as well as serving as assistant conductor and répétiteur at major venues such as the Salzburg Festival and Teatro Real in Madrid. The 2023/24 season marked further milestones as Adomas conducted ensembles like Kremerata Baltica, Oulu Sinfonia, the Swiss Youth Symphony, and the Lithuanian National Symphony orchestras, in addition to working with the [i]Schleswig-Holsteinisches Landestheater[/i] on Carl Millöcker’s operetta [i]Der arme Jonathan[/i].
+				In recent years, Adomas has built a portfolio of engagements with leading orchestras and institutions. His recent highlights include performances with the Lahti Symphony, Jyväskylä Symphony, and the Lithuanian National Opera and Ballet Theatre orchestras, as well as serving as assistant conductor and répétiteur at major venues such as the Salzburg Festival and Teatro Real in Madrid. The 2023/24 season marked further milestones as Adomas conducted ensembles like Kremerata Baltica, Oulu Sinfonia, the Swiss Youth Symphony, and the Lithuanian National Symphony orchestras, in addition to working with the [i]Schleswig-Holsteinisches Landestheater[/i] on Carl Millöcker’s operetta [i]Der arme Jonathan[/i].
 			</p>
 			<br />
 			<p>
