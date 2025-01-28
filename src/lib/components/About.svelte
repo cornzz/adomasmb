@@ -46,7 +46,7 @@
 			</p>
 			<br />
 			<p>
-				Apart from music, Adomas is also an avid language learner, a passionate basketball player, a poker enthusiast, and a soon-to-be pilot.
+				Apart from music, Adomas is also an avid language learner, a passionate basketball fan, a poker enthusiast, and a soon-to-be pilot.
 			</p>
 		</div>
 	{/if}
