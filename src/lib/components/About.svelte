@@ -28,7 +28,7 @@
 <div class="text-white">
 	<h1 id="about" bind:this={section}>About</h1>
 	<p>
-		Adomas Morkūnas-Budrys is a talented Lithuanian conductor currently pursuing advanced studies at the prestigious Sibelius Academy. He previously earned his Bachelor's degree from the Zürich University of the Arts under the mentorship of Prof. Johannes Schlaefli, with an enriching Erasmus experience at the Norwegian Academy of Music under Prof. Ole Kristian Ruud.
+		Adomas Morkūnas-Budrys is a talented Lithuanian conductor currently pursuing his studies at the prestigious Sibelius Academy. He previously earned his Bachelor's degree from the Zürich University of the Arts under the mentorship of Prof. Johannes Schlaefli, with an enriching Erasmus experience at the Norwegian Academy of Music under Prof. Ole Kristian Ruud.
 	</p>
 	{#if !mobile || showMore}
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
