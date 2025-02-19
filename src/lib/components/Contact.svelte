@@ -10,9 +10,11 @@
 	const publicKey = 'W2HxHs5S0KYEqvSBu'
 
 	let loading: boolean = false
-	let contactSuccess: boolean = new Date(+contactedAt + oneDayinMs) >= new Date() && !dev
+	let contactSuccess: boolean = new Date(+contactedAt + oneDayinMs) >= new Date()
 	let contactFailure: boolean = false
 	let form: HTMLFormElement
+
+	$: console.log('contactedAt', contactedAt)
 
 	async function submit(): Promise<void> {
 		loading = true
