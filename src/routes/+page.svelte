@@ -28,12 +28,11 @@
 		<div class="absolute h-full w-full bg-landing-image bg-cover sm:bg-right-top bg-[82%_top] bg-no-repeat" />
 	</div>
 
-	<Quotes />
+	<!-- <Quotes /> -->
 </div>
 
 <div
-	class="w-11/12 max-w-5xl px-6 sm:px-16 py-10 mx-auto bg-primary relative
-			top-[-50px] min-[552px]:max-md:top-0 shortScreens:top-0"
+	class="w-11/12 max-w-5xl px-6 sm:px-16 py-10 mx-auto bg-primary relative top-[-12vh] min-[552px]:max-md:top-0 shortScreens:top-0"
 >
 	<About />
 </div>
