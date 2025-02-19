@@ -1,22 +1,9 @@
 <script lang="ts">
 	import { Quotes, About, Media, Contact } from '$lib'
-	import { onMount } from 'svelte'
+	import type { LayoutData } from './$types'
 
-	let scrollY: number = 0
-	let innerHeight: number = 0
-	let year: number
-
-	onMount(() => (year = new Date().getFullYear()))
+	export let data: LayoutData
 </script>
-
-<svelte:window bind:scrollY bind:innerHeight />
-<svelte:head>
-	<title>Home – Adomas Morkūnas-Budrys</title>
-	<meta
-		name="description"
-		content="Adomas Morkūnas-Budrys is one of the most promising Lithuanian conductors of his generation. Known for his wide range of musical tastes, Adomas is particularly passionate about large-scale symphonic works, Nordic and contemporary music. He is also always keen to explore the compositions of less-known artists and introduce them to orchestras and the public."
-	/>
-</svelte:head>
 
 <div class="min-h-screen flex flex-col">
 	<header
@@ -56,11 +43,11 @@
 </div>
 
 <div class="w-11/12 max-w-5xl py-16 mx-auto">
-	<Contact />
+	<Contact contactedAt={data.contactedAt} />
 </div>
 
 <footer class="py-2 text-white flex flex-col items-center justify-center text-sm sm:flex-row gap-x-2">
-	<span>© {year ?? '20XX'} Adomas Morkūnas-Budrys</span>
+	<span>© {new Date().getFullYear()} Adomas Morkūnas-Budrys</span>
 	<span class="hidden sm:block">|</span>
-	<span>Design by <a href="https://corny.me" target="_blank">corny</a></span>
+	<span>Design by <a href="https://corny.me" target="_blank">ck</a></span>
 </footer>

@@ -1,4 +1,11 @@
-export const images = [
+export const images: {
+	large: string
+	width: number
+	height: number
+	thumb: string
+	class?: string
+	caption: string
+}[] = [
 	{
 		large: 'adomas-mb-3.webp',
 		width: 2000,
@@ -83,6 +90,8 @@ export const images = [
 	}
 ]
 
-export const videos = [
-	
-]
+export const videos: {
+	id: string
+	thumb: string
+	caption: string
+}[] = []

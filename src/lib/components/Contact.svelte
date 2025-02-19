@@ -1,16 +1,16 @@
 <script lang="ts">
 	import { dev } from '$app/environment'
-	import { onMount } from 'svelte'
 	import emailjs from '@emailjs/browser'
+
+	export let contactedAt: number
 
 	const oneDayinMs = 1000 * 60 * 60 * 24
 	const serviceID = 'default_service'
 	const templateID = 'template_ahjsm5k'
 	const publicKey = 'W2HxHs5S0KYEqvSBu'
 
-	let ready: boolean = false
 	let loading: boolean = false
-	let contactSuccess: boolean = false
+	let contactSuccess: boolean = new Date(+contactedAt + oneDayinMs) >= new Date() && !dev
 	let contactFailure: boolean = false
 	let form: HTMLFormElement
 
@@ -20,39 +20,24 @@
 			await emailjs.sendForm(serviceID, templateID, form, publicKey)
 			form.reset()
 			contactSuccess = true
-			localStorage.setItem('contactedAt', `${+new Date()}`)
+			document.cookie = `contactedAt=${+new Date()}`
 		} catch (error) {
 			console.log('Error sending message:', error)
 			contactFailure = true
 		}
 		loading = false
 	}
-
-	onMount(() => {
-		const contactedAt = localStorage.getItem('contactedAt')
-		if (contactedAt) {
-			contactSuccess = !dev && new Date(+contactedAt + oneDayinMs) >= new Date()
-		}
-		ready = true
-	})
 </script>
 
 <h1 id="contact" class="text-4xl font-semibold text-white">Contact</h1>
 
 {#if contactSuccess}
 	<div class="text-white">Thank you for contacting me, I will get back to you as soon as possible!</div>
-{:else if ready}
+{:else}
 	<form class="flex flex-col gap-2" class:loading on:submit|preventDefault={submit} bind:this={form}>
 		<input name="from_name" type="text" placeholder="Your Name" required={!dev} />
 		<input name="reply_to" type="email" placeholder="Your E-Mail Address" required={!dev} />
-		<textarea
-			name="message"
-			cols="30"
-			rows="8"
-			placeholder="Your Message"
-			minlength="10"
-			required={!dev}
-		/>
+		<textarea name="message" cols="30" rows="8" placeholder="Your Message" minlength="10" required={!dev} />
 		<div class="flex justify-end items-center gap-3">
 			{#if contactFailure}
 				<div class="text-red-400">Something went wrong... Please try again later!</div>
