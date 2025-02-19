@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { dev } from '$app/environment'
 	import emailjs from '@emailjs/browser'
 
 	export let contactedAt: number
@@ -13,8 +12,6 @@
 	let contactSuccess: boolean = new Date(+contactedAt + oneDayinMs) >= new Date()
 	let contactFailure: boolean = false
 	let form: HTMLFormElement
-
-	$: console.log('contactedAt', contactedAt)
 
 	async function submit(): Promise<void> {
 		loading = true
@@ -37,9 +34,9 @@
 	<div class="text-white">Thank you for contacting me, I will get back to you as soon as possible!</div>
 {:else}
 	<form class="flex flex-col gap-2" class:loading on:submit|preventDefault={submit} bind:this={form}>
-		<input name="from_name" type="text" placeholder="Your Name" required={!dev} />
-		<input name="reply_to" type="email" placeholder="Your E-Mail Address" required={!dev} />
-		<textarea name="message" cols="30" rows="8" placeholder="Your Message" minlength="10" required={!dev} />
+		<input name="from_name" type="text" placeholder="Your Name" required />
+		<input name="reply_to" type="email" placeholder="Your E-Mail Address" required />
+		<textarea name="message" cols="30" rows="8" placeholder="Your Message" minlength="10" required />
 		<div class="flex justify-end items-center gap-3">
 			{#if contactFailure}
 				<div class="text-red-400">Something went wrong... Please try again later!</div>
