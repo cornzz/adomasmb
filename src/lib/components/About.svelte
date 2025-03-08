@@ -28,21 +28,21 @@
 <div class="text-white">
 	<h1 id="about" bind:this={section}>About</h1>
 	<p>
-		Adomas Morkūnas-Budrys is a talented Lithuanian conductor currently pursuing his studies at the prestigious Sibelius Academy. He previously earned his Bachelor's degree from the Zürich University of the Arts under the mentorship of Prof. Johannes Schlaefli, with an enriching Erasmus experience at the Norwegian Academy of Music under Prof. Ole Kristian Ruud.
+		Adomas Morkūnas-Budrys is a Lithuanian conductor, currently studying at the Sibelius Academy under Prof. Sakari Oramo. He previously studied at the Zürich University of the Arts under Prof. Johannes Schlaefli and the Norwegian Academy of Music under Prof. Ole Kristian Ruud.
 	</p>
 	{#if !mobile || showMore}
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
 			<br />
 			<p>
-				In recent years, Adomas has built a portfolio of engagements with leading orchestras and institutions. His recent highlights include performances with the Lahti Symphony, Jyväskylä Symphony, and the Lithuanian National Opera and Ballet Theatre orchestras, as well as serving as assistant conductor and répétiteur at major venues such as the Salzburg Festival and Teatro Real in Madrid. The 2023/24 season marked further milestones as Adomas conducted ensembles like Kremerata Baltica, Oulu Sinfonia, the Swiss Youth Symphony, and the Lithuanian National Symphony orchestras, in addition to working with the <i>Schleswig-Holsteinisches Landestheater</i> on Carl Millöcker’s operetta <i>Der arme Jonathan</i>.
+				Adomas's recent highlights include performances with the Lahti Symphony, Lithuanian Chamber, Jyväskylä Symphony, and the Lithuanian National Opera and Ballet Theatre orchestras, as well as serving as assistant conductor and répétiteur at the Salzburg Festival and Teatro Real in Madrid. In the 2023/24 season, Adomas conducted such ensembles like Kremerata Baltica, Oulu Sinfonia, the Swiss Youth Symphony, and the Lithuanian National Symphony orchestras, in addition to working at the <i>Schleswig-Holsteinisches Landestheater</i> on Carl Millöcker’s operetta <i>Der arme Jonathan</i>.
 			</p>
 			<br />
 			<p>
-				Adomas’s collaborations extend to many esteemed orchestras, including the Finnish Radio Symphony Orchestra, Helsinki Philharmonic, Manchester Camerata, Lithuanian Chamber Orchestra, and Thessaloniki State Symphony Orchestra. His operatic experience includes being part of the creative team for Georg Friedrich Haas’s opera Bluthaus, working with prominent opera houses like the Bayerische Staatsoper and Opéra de Lyon.
+				Adomas also had a chance to collaborate with orchestras like the Finnish Radio Symphony, Helsinki Philharmonic, Manchester Camerata, and Thessaloniki State Symphony. His operatic experience includes being part of the creative team for Georg Friedrich Haas’s opera Bluthaus, working with prominent opera houses like <i>Bayerische Staatsoper</i> and <i>Opéra de Lyon</i>.
 			</p>
 			<br />
 			<p>
-				Adomas is an enthusiastic explorer of XX-XXI Eastern European music, focusing on discovering and promoting little-known masterpieces. Beyond conducting, Adomas is an accomplished pianist, arranger, and organizer of musical events. Since 2018, he has been the driving force behind the Future Symphony Competition, held three times. As Conductor of the Future Symphony Orchestra, Adomas has premiered 19 new orchestral compositions, demonstrating his commitment to fostering contemporary music.
+				Adomas is an enthusiastic explorer of XX-XXI Eastern European music, focusing on discovering and promoting little-known masterpieces. Beyond conducting, Adomas is a pianist, arranger, and organizer of musical events. Since 2018, he has been the driving force behind the Future Symphony Competition, held three times. As Conductor of the Future Symphony Orchestra, Adomas has premiered 19 new orchestral compositions, demonstrating his commitment to fostering contemporary music.
 			</p>
 			<br />
 			<p>
