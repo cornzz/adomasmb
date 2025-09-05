@@ -28,13 +28,13 @@
 <div class="text-white">
 	<h1 id="about" bind:this={section}>About</h1>
 	<p>
-		Adomas Morkūnas-Budrys is a Lithuanian conductor, currently studying at the Sibelius Academy under Prof. Sakari Oramo. He previously studied at the Zürich University of the Arts under Prof. Johannes Schlaefli and the Norwegian Academy of Music under Prof. Ole Kristian Ruud.
+		Adomas Morkūnas-Budrys is a Lithuanian conductor and private pilot. He recently graduated from the Sibelius Academy under Prof. Sakari Oramo and now continues his journey by pursuing a professional pilot career at the airBaltic Pilot Academy. Previously, he studied at the Zürich University of the Arts under Prof. Johannes Schlaefli and at the Norwegian Academy of Music under Prof. Ole Kristian Ruud.
 	</p>
 	{#if !mobile || showMore}
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
 			<br />
 			<p>
-				Adomas's recent highlights include performances with the Lahti Symphony, Lithuanian Chamber, Jyväskylä Symphony, and the Lithuanian National Opera and Ballet Theatre orchestras, as well as serving as assistant conductor and répétiteur at the Salzburg Festival and Teatro Real in Madrid. In the 2023/24 season, Adomas conducted such ensembles like Kremerata Baltica, Oulu Sinfonia, the Swiss Youth Symphony, and the Lithuanian National Symphony orchestras, in addition to working at the <i>Schleswig-Holsteinisches Landestheater</i> on Carl Millöcker’s operetta <i>Der arme Jonathan</i>.
+				Adomas's recent highlights include performances with the Lahti Symphony, Lithuanian Chamber, Jyväskylä Symphony, and the Lithuanian National Opera and Ballet Theatre orchestras, as well as serving as assistant conductor and répétiteur at the Salzburg Festival and Teatro Real in Madrid. Adomas also conducted such ensembles like Kremerata Baltica, Oulu Sinfonia, the Swiss Youth Symphony, and the Lithuanian National Symphony orchestras, in addition to working at the <i>Schleswig-Holsteinisches Landestheater</i> on Carl Millöcker’s operetta <i>Der arme Jonathan</i>.
 			</p>
 			<br />
 			<p>
@@ -42,11 +42,11 @@
 			</p>
 			<br />
 			<p>
-				Adomas is an enthusiastic explorer of XX-XXI Eastern European music, focusing on discovering and promoting little-known masterpieces. Beyond conducting, Adomas is a pianist, arranger, and organizer of musical events. Since 2018, he has been the driving force behind the Future Symphony Competition, held three times. As Conductor of the Future Symphony Orchestra, Adomas has premiered 19 new orchestral compositions, demonstrating his commitment to fostering contemporary music.
+				Beyond conducting, Adomas is a pianist, arranger, and organizer of musical events. Since 2018, he has been the driving force behind the Future Symphony Competition, held three times, as well as Conductor of the Future Symphony Orchestra.
 			</p>
 			<br />
 			<p>
-				Apart from music, Adomas is also an avid language learner, a passionate basketball fan, a poker enthusiast, and a soon-to-be pilot.
+			
 			</p>
 		</div>
 	{/if}
