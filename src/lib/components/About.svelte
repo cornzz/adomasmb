@@ -28,7 +28,7 @@
 <div class="text-white">
 	<h1 id="about" bind:this={section}>About</h1>
 	<p>
-		Adomas Morkūnas-Budrys is a Lithuanian conductor and private pilot. A recent graduate of the Sibelius Academy under Prof. Sakari Oramo, he is now continuing his journey by pursuing a professional pilot career at the airBaltic Pilot Academy. He previously studied conducting at the Zürich University of the Arts with Prof. Johannes Schlaefli and at the Norwegian Academy of Music with Prof. Ole Kristian Ruud.
+Adomas Morkūnas-Budrys is a Lithuanian conductor. He has recently graduated from the Sibelius Academy under the guidance of Prof. Sakari Oramo and is now continuing his journey by pursuing a professional pilot career at the airBaltic Pilot Academy. He previously studied conducting at the Zürich University of the Arts with Prof. Johannes Schlaefli and at the Norwegian Academy of Music with Prof. Ole Kristian Ruud.
 	</p>
 	{#if !mobile || showMore}
 		<div class="max-[600px]:hidden" class:!block={ready} transition:slide={{ duration: slideDuration }}>
